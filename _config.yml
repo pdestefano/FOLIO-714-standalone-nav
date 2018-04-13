@@ -1,0 +1,119 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: FOLIO Developer
+description: >
+  FOLIO is a new open source, cloud hostable, app-store based
+  library platform, designed to facilitate collaboration between
+  disparate development teams.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dev.folio.org" # the base hostname & protocol for your site
+foliourl: https://www.folio.org/
+roadmapurl: https://wiki.folio.org/display/PC/FOLIO+Roadmap
+discussurl: https://discuss.folio.org
+issuesurl: https://issues.folio.org
+wikiurl: https://wiki.folio.org/
+google_analytics: UA-79833310-3
+github_username: folio-org
+twitter_username: folio_lsp
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  
+gist:
+   noscript: false
+   
+exclude: [bin, Gemfile, Gemfile.lock, CONTRIBUTING.md, README.md, tmp, vendor, work]
+
+defaults:
+- scope:
+    path: _guides
+    type: guides
+  values:
+    layout: guides
+    sectionid: guides
+    
+- scope:
+    path: _getstarted
+    type: getstarted
+  values:
+    layout: getstarted
+    sectionid: getstarted 
+    
+- scope:
+    path: _reference
+    type: reference
+  values:
+    layout: reference
+    sectionid: reference
+
+- scope:
+    path: _source
+    type: source
+  values:
+    layout: source
+    sectionid: source
+
+- scope:
+    path: _download
+    type: download
+  values:
+    layout: download
+    sectionid: download  
+    
+- scope:
+    path: _tools
+    type: tools
+  values:
+    layout: tools
+    sectionid: tools
+
+- scope:
+    path: _guidelines
+    type: guidelines
+  values:
+    layout: guidelines
+    sectionid: guidelines
+    
+- scope:
+    path: _tutorials
+    type: tutorials
+  values:
+    layout: tutorials
+    sectionid: tutorials 
+    
+collections:
+  posts:
+    permalink: /news/:year/:month/:day/:title/
+  guides:
+    permalink: /guides/:path/
+    output: true  
+  getstarted:
+    permalink: /getstarted/:path/
+    output: true   
+  source:
+    permalink: /source/:path/
+    output: true  
+  download:
+    permalink: /download/:path/
+    output: true    
+  reference:
+    permalink: /reference/:path/
+    output: true 
+  tools:
+    permalink: /tools/:path/
+    output: true    
+  guidelines:
+    permalink: /guidelines/:path/
+    output: true  
+  tutorials:
+    permalink: /tutorials/:path/
+    output: true   

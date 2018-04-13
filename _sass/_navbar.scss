@@ -1,0 +1,157 @@
+// Folio Styling
+
+.navbar-brand {
+   padding-right:0px;
+}
+
+.form-control {
+    margin-top: 8px;
+	width: 120px;
+	font-size: 13px;
+}
+
+// arrows
+i {
+  border: solid #f8f8f8;
+  border-width: 0 0.1em 0.1em 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+	margin-top: -50px;
+}
+
+	
+// divider lines in secondary navigation	
+.divider-vertical {
+      padding-top: 1.3em;
+}	
+
+// styling for the nav bar	
+.nav > li > a {
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+}
+
+		
+// Style the top nav color	
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #777;
+}	
+
+// The height of the mobile secondary nav
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 400px;
+}
+
+
+// top navigation color
+.top-nav {
+    color: #f8f8f8 !important;
+}
+
+// ext link image
+.ext-lnk {
+     margin-left: 1px; 
+	 margin-bottom: 3px;
+}
+
+// top navigation img
+.img-indent {
+    padding-left: 65px;
+}
+
+// top navigation img
+.img-indent2 {
+    padding-left: 45px;
+}
+
+.sec-nav-st {
+    background: #e7e7e7; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+// Small Screen
+@media (max-width: 991px) {
+
+       // top navigation img
+       .img-indent {
+          padding-left: 20px;
+       }
+	   
+       // top navigation img
+      .img-indent2 {
+           padding-left: 0px;
+       }
+	   
+      .sec-nav-st {
+           background: #4c7ea5; 
+		   padding-left: 10px;
+      }	
+		
+	  .sec-nav-clr {
+		   color: #f8f8f8 !important;
+		   padding-left: 17px !important;
+      }	
+		
+	  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+		  max-height: 570px;
+	  }
+
+      // top navigation 
+      .top-nav {
+          padding-left:20px !important;
+      }
+		
+	  .navbar-default .navbar-toggle {
+		  background-color: #ddd;
+	  }
+			  
+	  // Visible Length of the toc is determined by the height of the screen
+      // Used for left nav that is long and goes off the screen
+	  @media (max-height: 600px) {
+	
+           .sec-nav-scroll {
+	            max-height: 100px; 
+	            overflow-y: scroll;
+           }
+		   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			  max-height: 320px;
+		   }
+		
+	  }
+	  
+	  // No vertical divider in responsive 
+      .divider-vertical {
+         display: none !important;
+      }	
+
+	   // Color for responsive drop downs
+       .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+         color: #f8f8f8;
+     }	 
+}
+
+@media (max-width: 767px) {
+    .divider-vertical {
+        display: none !important;
+     }
+}
+
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+
+#navbar-toggle-cbox {
+  display:none
+}
+
+

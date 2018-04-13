@@ -1,0 +1,170 @@
+<!-- Top Navigation-->
+<!-- Note Bars are flipped for mobile -->
+<nav class="navbar navbar-default navbar-fixed-top">
+       <input type="checkbox" id="navbar-toggle-cbox">
+       <div class="navbar-header">
+		  <label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </label>		  
+           <a class="navbar-brand" href="{{site.foliourl}}"><img class="img-indent" height=18px src="{{site.baseurl}}/images/FOLIO_Bee.png"></a>	
+		</div>	
+		<!-- Double Navigation Bar -->
+        <div id="navbar" class="collapse navbar-collapse">	
+		   <!-- Primary Nav Bar -->
+           <div class="container">		   
+              <div class="row">	
+                 <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown">
+			          <a href="#" data-toggle="dropdown" class="top-nav dropdown-toggle">Overview&nbsp;<i class="arrow down"></i></a>	
+                      <ul class="dropdown-menu">
+		                <li><a href="{{site.foliourl}}">About</a></li>
+			            <li><a href="{{site.roadmapurl}}">Platform & Roadmap</a></li>
+			            <li><a href="https://www.folio.org/customization-hosting/">Customization & Hosting</a></li>
+                        <li><a href="https://trello.com/b/A27ucwg8/events">News & Events</a></li>
+                        <li><a href="https://www.folio.org/community/">Community</a></li>
+			            <li><a href="{{ site.discussurl }}">Resources</a></li>
+                      </ul>							   
+			        </li>				
+                    <li class="dropdown">
+                      <a href="#" class="top-nav dropdown-toggle" data-toggle="dropdown">Developers&nbsp;<i class="arrow down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/">Documentation</a></li>
+			            <li><a href="{{ "/source/components/" | prepend: site.baseurl }}">Source Code</a></li>
+				        <li><a href="https://folio-project.slack.com/messages/">Chat</a></li>
+			            <li><a href="https://slack-invitation.folio.org/">Chat (Sign Up)</a></li>
+                        <li><a href="{{ site.issuesurl }}">Tracker</a></li>
+                      </ul>						
+			        </li>	
+			        <li {% if page.sectionid=='community' %} class="active" {% endif %}>
+			          <a href="{{site.wikiurl}}" class="top-nav">Project Wiki <img class="ext-lnk" src="{{site.baseurl}}/images/exlink.png"></a>
+			        </li>				
+			        <li {% if page.sectionid=='news' %} class="active" {% endif %}>
+				      <a href="{{ site.discussurl }}" class="top-nav">Discussion Boards <img class="ext-lnk" src="{{site.baseurl}}/images/exlink.png" style="padding-right:6px"></a>
+			        </li>							
+                 </ul>
+			     <ul class="nav navbar-nav navbar-right sec-nav-st sec-nav-scroll visible-xs">			 
+			       <li {% if page.sectionid=='getstarted' %} class="active" {% endif %}>
+			         <a class="sec-nav-clr" href="{{ "/getstarted/gsinfo/" | prepend: site.baseurl }}">Get Started</a>
+			       </li>
+				   <li class="divider-vertical">|</li>					
+				   <li {% if page.sectionid=='reference' %} class="active" {% endif %}>
+			         <a class="sec-nav-clr" href="{{ "/reference/apispecifications/" | prepend: site.baseurl }}">Reference</a>
+				   </li>
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='source' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/source/components/" | prepend: site.baseurl }}">Code</a>
+				   </li>
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='guides' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/guides/introduction/" | prepend: site.baseurl }}">Guides</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='download' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/download/download-built-artifacts/" | prepend: site.baseurl }}">Download</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid== 'tutorials' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/tutorials/foliodeveloperscurr/" | prepend: site.baseurl }}">Tutorials</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='tools' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/tools/setupdevenv/" | prepend: site.baseurl }}">Tools</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='guidelines' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/guidelines/communityguidelines/" | prepend: site.baseurl }}">Guidelines</a>
+				   </li>					 
+				</ul>					 
+              </div> <!-- end row -->
+           </div> <!-- end container -->
+		   <!-- Secondary Nav Bar -->
+           <div class="container sec-nav-st" style="width:100%">
+	         <div class="navbar-header hidden-xs">	  
+          	   <a class="navbar-brand" href="/"><img class="img-indent2" height=18px src="{{site.baseurl}}/images/devlogo.png"></a>
+		     </div>
+             <div class="container">
+               <div class="row">			
+			     <ul class="nav navbar-nav navbar-right hidden-xs">
+			       <li {% if page.sectionid=='getstarted' %} class="active" {% endif %}>
+			         <a class="sec-nav-clr" href="{{ "/getstarted/gsinfo/" | prepend: site.baseurl }}">Get Started</a>
+			       </li>
+				   <li class="divider-vertical">|</li>					
+				   <li {% if page.sectionid=='reference' %} class="active" {% endif %}>
+			         <a class="sec-nav-clr" href="{{ "/reference/apispecifications/" | prepend: site.baseurl }}">Reference</a>
+				   </li>
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='source' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/source/components/" | prepend: site.baseurl }}">Code</a>
+				   </li>
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='guides' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/guides/introduction/" | prepend: site.baseurl }}">Guides</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='download' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/download/download-built-artifacts/" | prepend: site.baseurl }}">Download</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid== 'tutorials' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/tutorials/foliodeveloperscurr/" | prepend: site.baseurl }}">Tutorials</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='tools' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/tools/setupdevenv/" | prepend: site.baseurl }}">Tools</a>
+				   </li>	
+				   <li class="divider-vertical">|</li>
+				   <li {% if page.sectionid=='guidelines' %} class="active" {% endif %}>
+				     <a class="sec-nav-clr" href="{{ "/guidelines/communityguidelines/" | prepend: site.baseurl }}">Guidelines</a>
+				   </li>
+				   <li>
+                     <div class="form" style="margin-right:0px;padding-left:10px;">
+				      <form action="get" id="searchDev" onsubmit="parent.scrollTo(0,0); return true">
+					    <input id="searchInput" type="text" class="form-control" placeholder="Search...">
+					  </form>		
+                     </div>
+                   </li>					 
+				</ul>	
+                 <ul class="nav navbar-nav navbar-right visible-xs">
+                    <li class="dropdown">
+			          <a href="#" data-toggle="dropdown" class="top-nav dropdown-toggle">Overview&nbsp;<i class="arrow down"></i></a>	
+                      <ul class="dropdown-menu">
+		                <li><a href="{{site.foliourl}}">About</a></li>
+			            <li><a href="{{site.roadmapurl}}">Platform & Roadmap</a></li>
+			            <li><a href="https://www.folio.org/customization-hosting/">Customization & Hosting</a></li>
+                        <li><a href="https://trello.com/b/A27ucwg8/events">News & Events</a></li>
+                        <li><a href="https://www.folio.org/community/">Community</a></li>
+			            <li><a href="{{ site.discussurl }}">Resources</a></li>
+                      </ul>							   
+			        </li>				
+                    <li class="dropdown">
+                      <a href="#" class="top-nav dropdown-toggle" data-toggle="dropdown">Developers&nbsp;<i class="arrow down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/">Documentation</a></li>
+			            <li><a href="{{ "/source/components/" | prepend: site.baseurl }}">Source Code</a></li>
+				        <li><a href="https://folio-project.slack.com/messages/">Chat</a></li>
+			            <li><a href="https://slack-invitation.folio.org/">Chat (Sign Up)</a></li>
+                        <li><a href="{{ site.issuesurl }}">Tracker</a></li>
+                      </ul>						
+			        </li>	
+			        <li {% if page.sectionid=='community' %} class="active" {% endif %}>
+			          <a href="{{site.wikiurl}}" class="top-nav">Project Wiki <img class="ext-lnk" src="{{site.baseurl}}/images/exlink.png"></a>
+			        </li>				
+			        <li {% if page.sectionid=='news' %} class="active" {% endif %}>
+				      <a href="{{ site.discussurl }}" class="top-nav">Discussion Boards <img class="ext-lnk" src="{{site.baseurl}}/images/exlink.png"></a>
+			        </li>	
+				   <li>
+                     <div class="form" style="padding-left:16px">
+				      <form action="get" id="searchDev" onsubmit="parent.scrollTo(0,0); return true">
+					    <input id="searchInput" type="text" class="form-control" placeholder="Search...">
+					  </form>		
+                     </div>
+                   </li>					
+                 </ul>				
+			  </div> <!-- end row -->
+			</div>	<!-- end container -->
+		</div> <!-- end container -->	
+	</div> <!-- end nav bar -->	  			  
+</nav>
