@@ -1,4 +1,4 @@
-This is the source for "FOLIO Developers" at [dev.folio.org](https://dev.folio.org/)
+This is the source for a FOLIO top navigation bar.
 
 To contribute changes, please make the changes in a new branch and submit a
 pull request.
@@ -28,30 +28,3 @@ bundle exec jekyll build
 
 Occasionally do `bundle update` to advance the versions of dependencies.
 
-To verify internal and external links, do:
-
-```
-./bin/htmlproofer.sh
-```
-
-## Work area - management of dev site
-
-See [notes](work/README.md).
-
-## Theme enhancements
-
-If there is a need to override any more files, then copy them from the theme.
-
-## Deployment
-
-The master branch is automatically deployed as [dev.folio.org](https://dev.folio.org/)
-
-Other branches are re-built upon push of changes. Follow the GitHub link from the branch's continuous-integration details.
-
-## Additional information
-
-See project [FOLIO](https://issues.folio.org/browse/FOLIO)
-at the [FOLIO issue tracker](https://dev.folio.org/community/guide-issues).
-We use the label "devweb".
-
-The FOLIO Slack channel #dev-website
